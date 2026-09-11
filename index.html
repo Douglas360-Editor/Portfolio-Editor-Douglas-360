@@ -149,8 +149,8 @@
     .portfolio-video{position:relative;width:100%;height:100%;min-height:inherit;display:block;object-fit:cover;background:#080a12;}
     .media-video{position:relative;min-height:215px;overflow:hidden;background:#090b14;border-bottom:1px solid var(--line);}
     .work-card.featured .media-video{min-height:290px;}
-    .media-video.vertical{aspect-ratio:9/16;min-height:0;}
-    .media-video.vertical .portfolio-video{aspect-ratio:9/16;}
+    .media-video.vertical{aspect-ratio:auto;min-height:290px;height:290px;}
+    .media-video.vertical .portfolio-video{aspect-ratio:auto;width:100%;height:100%;object-fit:contain;background:#080a12;}
     .work-meta{margin:-2px 0 12px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);font-weight:700;}
     .play-overlay{position:absolute;inset:0;display:grid;place-items:center;z-index:3;background:radial-gradient(circle,rgba(10,14,30,.08),rgba(4,6,14,.28));cursor:pointer;transition:background .28s ease;}
     .play-button{width:68px;height:68px;border-radius:50%;border:1px solid rgba(138,248,255,.7);background:rgba(8,12,25,.78);backdrop-filter:blur(8px);display:grid;place-items:center;color:#8af8ff;box-shadow:0 0 24px rgba(138,248,255,.2),inset 0 0 20px rgba(115,149,255,.08);transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease,background .28s ease;}
@@ -160,7 +160,7 @@
     .media-video.is-playing .play-button{opacity:0;transform:scale(.8);}
     .media-video.is-playing:hover .play-overlay{pointer-events:auto;background:rgba(4,6,14,.12);}
     .media-video.is-playing:hover .play-button{opacity:1;transform:scale(1);}
-    @media (max-width:700px){.media-video,.work-card.featured .media-video{min-height:230px}.play-button{width:58px;height:58px}}
+    @media (max-width:700px){.media-video,.work-card.featured .media-video{min-height:230px}.media-video.vertical{height:230px;min-height:230px}.play-button{width:58px;height:58px}}
 </style>
 </head>
 <body>
@@ -186,8 +186,7 @@
 <article class="work-card featured"><div class="media-video"><video class="portfolio-video" playsinline="" preload="metadata" src="showreel.mp4"></video><div aria-label="Reproduzir Showreel" class="play-overlay" role="button"><span class="play-button"></span></div></div><div class="work-body"><div class="work-kicker">Showreel / seleção geral</div><div class="work-meta">16:9 • 57s • Showreel</div><h3>Douglas 360 Editor — Showreel</h3><p>Uma apresentação curta dos melhores recortes de edição, efeitos e som disponíveis no portfólio.</p><ul class="case-list"></ul></div></article>
 <article class="work-card"><div class="media-video"><video class="portfolio-video" playsinline="" preload="metadata" src="gta6.mp4">
 </video><div aria-label="Reproduzir GTA 6 Edit" class="play-overlay" role="button"><span class="play-button"></span></div></div><div class="work-body"><div class="work-kicker">Edit / GTA 6</div><div class="work-meta">16:9 • 34s • Edit</div><h3>GTA 6 Edit</h3><p>Edit focado em ritmo, cortes sincronizados e efeitos visuais, usando Adobe Premiere Pro e After Effects.</p><ul class="case-list"><li>Tipo: edit</li><li>Ferramentas: Adobe Premiere Pro, After Effects</li></ul></div></article>
-<article class="work-card"><div class="media-video vertical"><video class="portfolio-video" playsinline="" preload="metadata" src="pastel-redondo.mp4"></video>
-</video><div aria-label="Reproduzir Pastel Redondo" class="play-overlay" role="button"><span class="play-button"></span></div></div><div class="work-body"><div class="work-kicker">Publicidade / case real</div><div class="work-meta">9:16 • 47s • Publicidade</div><h3>Pastel Redondo</h3><p>Peça publicitária para a Pastelaria Pastel Redondo, pensada para Instagram, WhatsApp, YouTube e Facebook.</p><ul class="case-list"><li>Objetivo: apresentar a marca e os produtos em formato publicitário.</li><li>Edição: cortes dinâmicos, música, textos, efeitos e sound design.</li><li>Resultado visual: uma peça promocional com foco na identidade da Pastel Redondo.</li></ul></div></article>
+<article class="work-card"><div class="media-video vertical"><video class="portfolio-video" playsinline="" preload="metadata" src="pastel-redondo.mp4"></video><div aria-label="Reproduzir Pastel Redondo" class="play-overlay" role="button"><span class="play-button"></span></div></div><div class="work-body"><div class="work-kicker">Publicidade / case real</div><div class="work-meta">9:16 • 47s • Publicidade</div><h3>Pastel Redondo</h3><p>Peça publicitária para a Pastelaria Pastel Redondo, pensada para Instagram, WhatsApp, YouTube e Facebook.</p><ul class="case-list"><li>Objetivo: apresentar a marca e os produtos em formato publicitário.</li><li>Edição: cortes dinâmicos, música, textos, efeitos e sound design.</li><li>Resultado visual: uma peça promocional com foco na identidade da Pastel Redondo.</li></ul></div></article>
 
 
 </div></div></section>
